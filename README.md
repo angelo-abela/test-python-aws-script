@@ -5,7 +5,7 @@
   - make .env file with own environment variables based on .env.template.
   - docker build
       `docker build -t <docker image name> .`
-  - docker run `docker run [-e "CRON_TIME=<minutes>"] -it <docker image name>`
+  - docker run `docker run [-e "CRON_TIME=<minutes>"] --env-file=<env-filename> -it <docker image name>`
      CRON_TIME is the delaying minutes to iterate this script's excuting.
      default value is 5(minutes)
 
